@@ -34,8 +34,9 @@ spec:
       containers:
       - command:
         - mongod
+        - "--bind_ip_all"
         - "--smallfiles"
-        image: "mongo:3.2"
+        image: "mongo:3.6"
         imagePullPolicy: IfNotPresent
         name: mongodb
         ports:
