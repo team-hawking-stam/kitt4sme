@@ -21,6 +21,10 @@ spec:
     matchLabels:
       app: roughnator
   template:
+    metadata:
+      labels:
+        app: roughnator
+      name: roughnator
     spec:
       containers:
         - image: "ghcr.io/c0c0n3/kitt4sme.roughnator:latest"
