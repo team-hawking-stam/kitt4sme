@@ -36,7 +36,7 @@ spec:
         - mongod
         - "--bind_ip_all"
         - "--smallfiles"
-        image: "mongo:3.6"
+        image: "mongo:3.2"
         imagePullPolicy: IfNotPresent
         name: mongodb
         ports:
